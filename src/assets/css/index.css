@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+}
+
+.reservation {
+    background-color: #e2eaeb;
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#reservationTitle {
+    font-size: .75rem;
+    height: .6rem;
+}
+
+.box {
+    height: 6.5rem;
+    width: 100%;
+    background-color: white;
+}
+
+#reservationSteps {
+    height: 30rem;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (min-width: 700px) {
+    .reservation {
+        justify-content: center;
+    }
+    #reservationSteps {
+        height: 13rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center; 
+    }
+    #reservationTitle {
+        font-size: .90rem;
+        height: 1.5rem;
+    }
+}
+
+.box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (min-width: 700px) {
+    .box {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 23%;
+        height: 8rem;
+    }
+}
+
+.stepLogo {
+    width: 15%;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.stepText{
+    width: 60%;
+    font-size: .7rem;
+    padding-left: 1rem;
+}
+.stepText > h2 {
+    font-size: .9rem;
+}
+.stepText > p {
+    margin-top: -.5rem;
+}
+
+@media only screen and (min-width: 700px) {
+    .stepText{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .stepLogo{
+        padding-bottom: 1rem;
+        padding-left: 0;
+    }
+}
+
+#reservationForm {
+    height: 2.7rem;
+    width: 85%;
+}
+
+#reservationForm > form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form > input {
+    height: 100%;
+    width: 50%;
+    border: none;
+}
+
+#finBoxZipCode {
+    font-size: .7rem;
+    width: 15rem;
+}
+
+#finBoxInputButton {
+    background: #27ae60 url(../../img/loupe-recherche-annexx-blc.svg) no-repeat scroll 1.8% center / 12% auto;
+    color: white;
+    font-weight: bold;
+    font-size: .72rem;
+    padding-left: 1.25rem;
+    width: 15rem;
+}
+
+#fleche {
+    margin-right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+@media only screen and (max-width: 700px) {
+    #fleche {
+        display: none;
+    }
+}
