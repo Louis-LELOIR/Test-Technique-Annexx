@@ -2,23 +2,27 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Test page PHP</title>
+        <title>Post Reception for Technical Test</title>
     </head>
     <body>
         <p>
-            Bonjour <?php echo htmlspecialchars($_POST['code_postal']); ?>
-            <!-- htmlspecialchars permet de proteger le code en n'interpretant pas le code html
-            '<' = '&lt;' et '>' = '&gt;' php ne veut les considérer comme des strg mais il les laisse comme ça <-->
+            Code postal rentré :  <?php echo htmlspecialchars($_POST['code_postal']); ?>
         </p>
-    <?php
-    if (isset($_POST['vegetarien']))
-    {
-       echo '<p>Vous êtes donc végétarien.</p>';
-    }
-    else
-    {
-        echo '<p>Vous n\'êtes pas végétarien, vous mangez de la viande !</p>';
-    }
-    ?>
+        <?php
+        if (isset($_POST['code_postal']) && strlen($_POST['code_postal']) == 5) {
+            $zip_code = $_POST['code_postal'][0]."".$_POST['code_postal'][1];
+
+            if ($zip_code == "31") {
+                echo "<p> Toulouse </p>";
+            } elseif ($zip_code == "33") {
+                echo "<p> Bordeaux </p>";
+            } else {
+                echo "<p> Code postal inconnu </p>";
+            }
+        }
+        else {
+            echo '<p> ERREUR </p>';
+        }
+        ?>
     </body>
 </html>

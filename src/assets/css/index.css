@@ -85,6 +85,15 @@ body {
 }
 .stepText > p {
     margin-top: -.5rem;
+    font-size: .75rem;
+}
+#links > a {
+    text-decoration: none underline;
+    color: black;
+    font-weight: bold;
+}
+#links > a:hover {
+    color: red;
 }
 
 @media only screen and (min-width: 700px) {
@@ -94,7 +103,7 @@ body {
         padding: 0;
     }
     .stepLogo{
-        padding-bottom: 1rem;
+        padding-bottom: 1.2rem;
         padding-left: 0;
     }
 }
@@ -120,7 +129,7 @@ form > input {
 }
 
 #finBoxZipCode {
-    font-size: .7rem;
+    font-size: .9rem;
     width: 15rem;
 }
 
@@ -143,4 +152,10 @@ form > input {
     #fleche {
         display: none;
     }
+}
+@media only screen and (min-width: 700px) {
+    #finBoxInputButton {
+        background: #27ae60 url(../../img/loupe-recherche-annexx-blc.svg) no-repeat scroll 18% center / 12% auto;
+    }
+    
 }

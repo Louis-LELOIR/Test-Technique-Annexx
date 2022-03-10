@@ -21,10 +21,11 @@
             <div class="box" id="choose">
                 <div class="stepText">
                     <h2>1. CHOISISSEZ</h2>
-                    <p>La taile de box qu'il vous faut avec notre simulateur en ligne</p>
+                    <p>La taille de box qu'il vous faut avec notre <span id="links"><a href="https://www.annexx.com/guide-des-tailles.php">simulateur en ligne</a></span>
+                    </p>
                 </div>
                 <div class="stepLogo">
-                    <img width="90px" alt="Icone de box" src="img/BOX-v2.png">
+                    <img width="70px" alt="Icone de box" src="img/BOX-v2.png">
                 </div>
             </div>
             <div class="box" id="reserve">
@@ -39,16 +40,16 @@
             <div class="box" id="finalize">
                 <div class="stepText">
                     <h2>3. FINALISEZ</h2>
-                    <p>Votre contrat à distance avec la location zéro contact</p>
+                    <p>Votre contrat à distance avec la <b>location zéro contact</b></p>
                 </div>
                 <div class="stepLogo">
-                    <img width="45px" alt="Icone représentant un contrat" src="img/contract-2.png">
+                    <img width="35px" alt="Icone représentant un contrat" src="img/contract-2.png">
                 </div>
             </div>
             <div class="box" id="move">
                 <div class="stepText">
                     <h2>4. DÉMÉNAGEZ</h2>
-                    <p>Quand vous le souhaitez.<br/> Besoin de cartons ?</p>
+                    <p>Quand vous le souhaitez.<br/> Besoin de <span id="links"><a href="https://www.boutiquedudemenagement.com/">cartons</a></span> ?</p>
                 </div>
                 <div class="stepLogo">
                     <img width="50px" alt="Icone représentant un camion de livraison" src="img/delivery-truck.png" style="transform: scaleX(-1);">
