@@ -124,7 +124,6 @@ body {
 
 form > input {
     height: 100%;
-    width: 50%;
     border: none;
 }
 
@@ -151,6 +150,12 @@ form > input {
 @media only screen and (max-width: 700px) {
     #fleche {
         display: none;
+    }
+    #finBoxZipCode {
+        width: 9rem;
+    }
+    #finBoxInputButton {
+        width: 9rem;
     }
 }
 @media only screen and (min-width: 700px) {
